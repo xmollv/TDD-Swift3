@@ -22,15 +22,9 @@ class ViewController: UIViewController {
     
     func numberOfVowels(in string: String) -> Int {
         let vowels: [Character] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
-        var numberOfVowels = 0
-        
-        for character in string.characters {
-            if vowels.contains(character) {
-                numberOfVowels += 1
-            }
+        return string.characters.reduce(0){
+            $0 + (vowels.contains($1) ? 1 : 0)
         }
-        
-        return numberOfVowels
     }
 
 
