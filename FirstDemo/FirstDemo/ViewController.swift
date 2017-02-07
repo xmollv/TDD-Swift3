@@ -29,13 +29,12 @@ class ViewController: UIViewController {
     
     func makeHeadline(from string: String) -> String {
         let words = string.components(separatedBy: " ")
-        var headline = ""
-        for var word in words {
-            let firstCharacter = word.remove(at: word.startIndex)
-            headline += "\(String(firstCharacter).uppercased())\(word) "
+        let headlineWords = words.map { (word) -> String in
+            var mutableWord = word
+            let first = mutableWord.remove(at: mutableWord.startIndex)
+            return String(first).uppercased() + mutableWord
         }
-        headline.remove(at: headline.index(before: headline.endIndex))
-        return headline
+        return headlineWords.joined(separator: " ")
     }
 
 
