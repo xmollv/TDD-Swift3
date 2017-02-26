@@ -13,6 +13,7 @@
 		01A60F331E4A29CB00C4B1A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A60F321E4A29CB00C4B1A2 /* Assets.xcassets */; };
 		01A60F361E4A29CB00C4B1A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A60F341E4A29CB00C4B1A2 /* LaunchScreen.storyboard */; };
 		B1422A4F1E62F1D100A76BD0 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1422A4E1E62F1D100A76BD0 /* ToDoItemTests.swift */; };
+		B1422A511E62F36200A76BD0 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1422A501E62F36200A76BD0 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		01A60F3C1E4A29CB00C4B1A2 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A60F421E4A29CB00C4B1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1422A4E1E62F1D100A76BD0 /* ToDoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItemTests.swift; path = Model/ToDoItemTests.swift; sourceTree = "<group>"; };
+		B1422A501E62F36200A76BD0 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = Model/ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				01A60F321E4A29CB00C4B1A2 /* Assets.xcassets */,
 				01A60F341E4A29CB00C4B1A2 /* LaunchScreen.storyboard */,
 				01A60F371E4A29CB00C4B1A2 /* Info.plist */,
+				B1422A501E62F36200A76BD0 /* ToDoItem.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				01A60F2E1E4A29CB00C4B1A2 /* ViewController.swift in Sources */,
 				01A60F2C1E4A29CB00C4B1A2 /* AppDelegate.swift in Sources */,
+				B1422A511E62F36200A76BD0 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
