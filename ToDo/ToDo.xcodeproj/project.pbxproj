@@ -154,6 +154,7 @@
 					};
 					01A60F3B1E4A29CB00C4B1A2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 63PYRNNP7M;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 01A60F271E4A29CB00C4B1A2;
 					};
@@ -369,6 +370,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 63PYRNNP7M;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmollv.ToDoTests;
@@ -383,6 +385,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 63PYRNNP7M;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmollv.ToDoTests;
