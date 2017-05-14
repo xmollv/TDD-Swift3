@@ -30,4 +30,20 @@ class ItemListDataProviderTests: XCTestCase {
         XCTAssertEqual(numberOfSections, 2)
     }
     
+    func test_NumberOfRows_InFirstSection_IsToDoCount() {
+        let sut = ItemListDataProvider()
+        sut.itemManager = ItemManager()
+        let tableView = UITableView()
+        tableView.dataSource = sut
+        
+        sut.itemManager?.add(ToDoItem(title: "Foo"))
+        XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
+        
+        sut.itemManager?.add(ToDoItem(title: "Bar"))
+        // This is needed because if we change the dataSource and we don't call
+        // reloadData(), the tableView doesn't know about the new items and return the old value (1)
+        tableView.reloadData()
+        XCTAssertEqual(tableView.numberOfRows(inSection: 0), 2)
+    }
+    
 }
