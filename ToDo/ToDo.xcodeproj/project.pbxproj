@@ -20,6 +20,7 @@
 		B1CBCF111EC89FF90033AE65 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */; };
 		B1CBCF141EC8A4120033AE65 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */; };
 		B1CBCF161EC8AA7D0033AE65 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF151EC8AA7D0033AE65 /* ItemListDataProviderTests.swift */; };
+		B1CBCF181EC8B0940033AE65 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF171EC8B0940033AE65 /* ItemCell.swift */; };
 		B1FE011D1E6300DD0097A5A9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE011C1E6300DD0097A5A9 /* Location.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		B1CBCF151EC8AA7D0033AE65 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		B1CBCF171EC8B0940033AE65 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B1FE011C1E6300DD0097A5A9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			children = (
 				B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */,
 				B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */,
+				B1CBCF171EC8B0940033AE65 /* ItemCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B1CBCF141EC8A4120033AE65 /* ItemListDataProvider.swift in Sources */,
 				01A60F2C1E4A29CB00C4B1A2 /* AppDelegate.swift in Sources */,
 				B1FE011D1E6300DD0097A5A9 /* Location.swift in Sources */,
+				B1CBCF181EC8B0940033AE65 /* ItemCell.swift in Sources */,
 				B1422A511E62F36200A76BD0 /* ToDoItem.swift in Sources */,
 				B1CBCF111EC89FF90033AE65 /* ItemListViewController.swift in Sources */,
 			);
