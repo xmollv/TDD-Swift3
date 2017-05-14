@@ -35,4 +35,12 @@ class ItemListViewControllerTest: XCTestCase {
         XCTAssertTrue(sut.tableView.dataSource is ItemListDataProvider)
     }
     
+    func test_LoadingView_SetsTableViewDelegate() {
+        XCTAssertTrue(sut.tableView.delegate is ItemListDataProvider)
+    }
+    
+    func test_LoadingView_SetsDataSourceAndDelegateToSameObject() {
+        XCTAssertEqual(sut.tableView.dataSource as? ItemListDataProvider, sut.tableView.delegate as? ItemListDataProvider)
+    }
+    
 }
