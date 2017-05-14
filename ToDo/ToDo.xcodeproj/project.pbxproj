@@ -18,6 +18,7 @@
 		B19933541E92BF18005DE445 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19933531E92BF18005DE445 /* ItemManager.swift */; };
 		B1CBCF0E1EC89F870033AE65 /* ItemListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF0D1EC89F870033AE65 /* ItemListViewControllerTest.swift */; };
 		B1CBCF111EC89FF90033AE65 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */; };
+		B1CBCF141EC8A4120033AE65 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */; };
 		B1FE011D1E6300DD0097A5A9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE011C1E6300DD0097A5A9 /* Location.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		B19933531E92BF18005DE445 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		B1CBCF0D1EC89F870033AE65 /* ItemListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTest.swift; sourceTree = "<group>"; };
 		B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		B1FE011C1E6300DD0097A5A9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B1CBCF101EC89FF90033AE65 /* ItemListViewController.swift */,
+				B1CBCF131EC8A4120033AE65 /* ItemListDataProvider.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19933541E92BF18005DE445 /* ItemManager.swift in Sources */,
+				B1CBCF141EC8A4120033AE65 /* ItemListDataProvider.swift in Sources */,
 				01A60F2C1E4A29CB00C4B1A2 /* AppDelegate.swift in Sources */,
 				B1FE011D1E6300DD0097A5A9 /* Location.swift in Sources */,
 				B1422A511E62F36200A76BD0 /* ToDoItem.swift in Sources */,
