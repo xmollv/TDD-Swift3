@@ -45,6 +45,15 @@ class ItemCellTests: XCTestCase {
         XCTAssertNotNil(cell.dateLabel)
     }
     
+    func test_ConfigCell_SetsLabelTexts() {
+        let location = Location(name: "Bar")
+        let item = ToDoItem(title: "Foo", itemDescription: nil, timestamp: 1456150025, location: location)
+        cell.configCell(with: item)
+        
+        XCTAssertEqual(cell.titleLabel.text, "Foo")
+        XCTAssertEqual(cell.locationLabel.text, "Bar")
+        XCTAssertEqual(cell.dateLabel.text, "02/22/2016")
+    }
 }
 
 extension ItemCellTests {
