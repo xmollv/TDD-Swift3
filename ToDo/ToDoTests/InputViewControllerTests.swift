@@ -25,8 +25,14 @@ class InputViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_HasTitleTextField() {
+    func test_HasIBOutletsSetted() {
         XCTAssertNotNil(sut.titleTextField)
+        XCTAssertNotNil(sut.dateTextField)
+        XCTAssertNotNil(sut.locationTextField)
+        XCTAssertNotNil(sut.addressTextField)
+        XCTAssertNotNil(sut.descriptionTextField)
+        XCTAssertNotNil(sut.saveButton)
+        XCTAssertNotNil(sut.cancelButton)
     }
     
 }
