@@ -29,4 +29,8 @@ class DetailViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.titleLabel)
     }
     
+    func test_HasMapView() {
+        XCTAssertNotNil(sut.mapView)
+    }
+    
 }
