@@ -141,5 +141,35 @@
             </objects>
             <point key="canvasLocation" x="651" y="-199"/>
         </scene>
+        <!--Input View Controller-->
+        <scene sceneID="f7H-gR-CcL">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="G1K-8J-Llm" customClass="InputViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="smw-40-Epk"/>
+                        <viewControllerLayoutGuide type="bottom" id="97N-rz-k5q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JNK-e9-vvP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPd-nB-3YU">
+                                <rect key="frame" x="134" y="20" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="GPd-nB-3YU" id="ntC-8p-o88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVl-qN-iAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="-199"/>
+        </scene>
     </scenes>
 </document>
