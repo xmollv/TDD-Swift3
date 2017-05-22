@@ -47,4 +47,10 @@ class DetailViewController: UIViewController {
             mapView.region = region 
         }
     }
+    
+    func checkItem() {
+        if let itemInfo = itemInfo {
+            itemInfo.0.checkItem(at: itemInfo.1)
+        }
+    }
 }
