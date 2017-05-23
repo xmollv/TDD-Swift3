@@ -35,7 +35,7 @@ class APIClient {
         
         
         session.dataTask(with: url) { (data, response, error) in
-            guard let data = data else { return }
+            guard let data = data else { completion(nil, WebserviceError.DataEmptyError); return }
             do {
                 let dict = try JSONSerialization.jsonObject(
                     with: data,
@@ -53,6 +53,10 @@ class APIClient {
             }
             }.resume()
     }
+}
+
+enum WebserviceError : Error {
+    case DataEmptyError
 }
 
 extension URLSession: SessionProtocol {}
