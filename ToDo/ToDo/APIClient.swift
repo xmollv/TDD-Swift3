@@ -36,16 +36,22 @@ class APIClient {
         
         session.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
-            let dict = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:String]
-            
-            let token: Token?
-            if let tokenString = dict?["token"] {
-                token = Token(id: tokenString)
-            } else {
-                token = nil
+            do {
+                let dict = try JSONSerialization.jsonObject(
+                    with: data,
+                    options: []) as? [String:String]
+                
+                let token: Token?
+                if let tokenString = dict?["token"] {
+                    token = Token(id: tokenString)
+                } else {
+                    token = nil
+                }
+                completion(token, nil)
+            } catch {
+                completion(nil, error)
             }
-            completion(token, nil)
-        }.resume()
+            }.resume()
     }
 }
 

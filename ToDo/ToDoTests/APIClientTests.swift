@@ -59,7 +59,7 @@ class APIClientTests: XCTestCase {
     }
     
     func test_Login_WhenJSONIsInvalid_ReturnsError() {
-        /*let sut = APIClient()
+        let sut = APIClient()
         let mockURLSession = MockURLSession(data: Data(), urlResponse: nil, error: nil)
         sut.session = mockURLSession
         
@@ -72,7 +72,7 @@ class APIClientTests: XCTestCase {
         
         waitForExpectations(timeout: 1) { (error) in
             XCTAssertNotNil(catchedError)
-        }*/
+        }
     }
     
 }
