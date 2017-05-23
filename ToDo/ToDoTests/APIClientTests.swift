@@ -37,19 +37,14 @@ class APIClientTests: XCTestCase {
         guard let expectedPassword = "%&34".addingPercentEncoding(
             withAllowedCharacters: allowedCharacters) else { fatalError() }
         
-
-        XCTAssertEqual(urlComponents?.percentEncodedQuery,
-            "username=\(expectedUsername)&password=\(expectedPassword)")
+        
+        XCTAssertEqual(urlComponents?.percentEncodedQuery, "username=\(expectedUsername)&password=\(expectedPassword)")
     }
     
     func test_Login_WhenSuccessful_CreatesToken() {
-        
-        
         let sut = APIClient()
-        let jsonData = "{"token": "1234567890"}".data(using: .utf8)
-        let mockURLSession = MockURLSession(data: jsonData,
-                                            urlResponse: nil,
-                                            error: nil)
+        let jsonData = "{\"token\": \"1234567890\"}".data(using: .utf8)
+        let mockURLSession = MockURLSession(data: jsonData, urlResponse: nil, error: nil)
         sut.session = mockURLSession
         let tokenExpectation = expectation(description: "Token")
         var catchedToken: Token? = nil
@@ -59,8 +54,25 @@ class APIClientTests: XCTestCase {
         }
         
         waitForExpectations(timeout: 1) { (error) in
-            XCTAssertEqual(catchedToken.id, "1234567890")
+            XCTAssertEqual(catchedToken?.id, "1234567890")
         }
+    }
+    
+    func test_Login_WhenJSONIsInvalid_ReturnsError() {
+        /*let sut = APIClient()
+        let mockURLSession = MockURLSession(data: Data(), urlResponse: nil, error: nil)
+        sut.session = mockURLSession
+        
+        let errorExpectation = expectation(description: "Error")
+        var catchedError: Error? = nil
+        sut.loginUser(withName: "Foo", password: "Bar") { (token, error) in
+            catchedError = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { (error) in
+            XCTAssertNotNil(catchedError)
+        }*/
     }
     
 }
@@ -78,7 +90,7 @@ extension APIClientTests {
             self.url = url
             dataTask.completionHandler = completionHandler
             return dataTask
-        } 
+        }
     }
     
     class MockTask: URLSessionDataTask {
@@ -98,7 +110,7 @@ extension APIClientTests {
         override func resume() {
             DispatchQueue.main.async() {
                 self.completionHandler?(self.data, self.urlResponse, self.responseError)
-            } 
-        } 
+            }
+        }
     }
 }
