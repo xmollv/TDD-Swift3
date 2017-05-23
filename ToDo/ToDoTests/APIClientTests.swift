@@ -30,6 +30,8 @@ class APIClientTests: XCTestCase {
         guard let url = mockURLSession.url else { XCTFail(); return }
         let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
         XCTAssertEqual(urlComponents?.host, "awesometodos.com")
+        XCTAssertEqual(urlComponents?.path, "/login")
+        XCTAssertEqual(urlComponents?.query, "username=dasdom&password=1234")
     }
     
 }

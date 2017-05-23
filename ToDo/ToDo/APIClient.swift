@@ -16,7 +16,11 @@ class APIClient {
     lazy var session: SessionProtocol = URLSession.shared
     
     func loginUser(withName username: String, password: String, completion: @escaping (Token?, Error?) -> Void) {
-        guard let url = URL(string: "https://awesometodos.com") else { fatalError() }
+        let query = "username=\(username)&password=\(password)"
+        guard let url = URL(string:
+            "https://awesometodos.com/login?\(query)") else {
+                fatalError()
+        }
         session.dataTask(with: url) { (data, response, error) in
     
         }
