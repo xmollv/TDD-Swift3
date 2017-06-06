@@ -72,7 +72,13 @@
                             <constraint firstItem="iz2-Kf-xhg" firstAttribute="top" secondItem="j6i-YN-ul4" secondAttribute="bottom" id="TYD-Cu-OGL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VTC-9V-h41"/>
+                    <navigationItem key="navigationItem" id="VTC-9V-h41">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Txx-Je-9Ze">
+                            <connections>
+                                <action selector="addItem:" destination="hJ2-UK-gOq" id="ofd-hd-xkB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dataProvider" destination="tPZ-am-CAq" id="Pxs-K7-I7T"/>
                         <outlet property="tableView" destination="j6i-YN-ul4" id="36p-dO-Ey3"/>
