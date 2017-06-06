@@ -59,6 +59,9 @@ class ItemListViewControllerTest: XCTestCase {
                             waitUntilDone: true)
         XCTAssertNotNil(sut.presentedViewController)
         XCTAssertTrue(sut.presentedViewController is InputViewController)
+        
+        let inputViewController = sut.presentedViewController as! InputViewController
+        XCTAssertNotNil(inputViewController.titleTextField)
     }
     
 }
